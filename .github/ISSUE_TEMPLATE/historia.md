@@ -14,6 +14,6 @@ Epico:
 
 
 ###
--[ ] Tarefa
--[ ] Tarefa
--[ ] Tarefa
+- [ ] Tarefa
+- [ ] Tarefa
+- [ ] Tarefa

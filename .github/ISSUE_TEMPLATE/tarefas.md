@@ -12,6 +12,6 @@ Historia:
 
 
 ### Descrição
--[ ] Tarefa
--[ ] Tarefa
--[ ] Tarefa
+- [ ] Tarefa
+- [ ] Tarefa
+- [ ] Tarefa
