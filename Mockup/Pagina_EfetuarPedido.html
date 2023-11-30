@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Pedido</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            display: flex;
+            align-items: center; 
+            justify-content: flex-start; 
+        }
+
+        header h1 {
+            margin: 0; 
+        }
+
+        header img {
+        margin-right: 8px;
+        max-height: 60px;
+        max-width: 10000%;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .footer img {
+            margin-right: 8px;
+            max-height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Empresa R.G.J</h1>
+        <img src="../Imagens/Imagem_Logotipo.png" alt="Imagem_Logotipo">
+    </header>
+
+    <section>
+        <h2>Realizar Pedido</h2>
+        <form>
+            <label for="tipoServico">Tipo de Serviço:</label>
+            <input type="text" id="tipoServico" name="tipoServico" required>
+
+            <label for="detalhes">Detalhes do Serviço:</label>
+            <textarea id="detalhes" name="detalhes" required></textarea>
+
+            <label for="arquitetoDesigner">Arquiteto/Designer:</label>
+            <input type="text" id="arquitetoDesigner" name="arquitetoDesigner" required>
+
+            <label for="data">Data do Serviço:</label>
+            <input type="date" id="data" name="data" required>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </section>
+
+    <div class="footer">
+        <a href="VisualizarPedidos.html">
+            <span>Ver Pedidos</span>
+        </a>
+        <a href="index.html">
+            <img src="imagemlogin.png" alt="Ícone de Login/Registar">
+            <span>Login/Registar</span>
+        </a>
+    </div>
+</body>
+</html>
