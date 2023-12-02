@@ -20,7 +20,7 @@ app.UseRouting();
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapRazorPages();
-    endpoints.MapGet("/", context => context.Response.WriteAsync("---------------Trabalho de Ams------"));
+    endpoints.MapGet("/", context => context.Response.WriteAsync("Para entrar na pagina web basta colocar no search http://localhost:5027/CriarPedido"));
 });
 
 app.Run();

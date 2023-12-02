@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TPHsn655995U58Wfefhc0yT+aPfQAGQO1Mag900MjNg=",
+  "Hash": "qdgkoDPtKtdo2g5Zv3ZKijr3our92GsfXDOA9ep0E4o=",
   "Source": "Projeto",
   "BasePath": "_content/Projeto",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\Imagens\\Imagem_Logotipo.png",
+      "SourceId": "Projeto",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\",
+      "BasePath": "_content/Projeto",
+      "RelativePath": "Imagens/Imagem_Logotipo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Imagens\\Imagem_Logotipo.png"
+    },
     {
       "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\Imagens\\imagemlogin.png",
       "SourceId": "Projeto",

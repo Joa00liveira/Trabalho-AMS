@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\Imagens\\Imagem_Logotipo.png",
+      "PackagePath": "staticwebassets\\Imagens\\Imagem_Logotipo.png"
+    },
+    {
       "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\Imagens\\imagemlogin.png",
       "PackagePath": "staticwebassets\\Imagens\\imagemlogin.png"
     },
