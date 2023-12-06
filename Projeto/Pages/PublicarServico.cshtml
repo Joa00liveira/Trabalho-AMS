@@ -1,11 +1,12 @@
 @page
+
 <!DOCTYPE html>
 <html lang="pt">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Criar Pedido</title>
+    <title>Publicar Serviço</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -55,7 +56,8 @@
         }
 
         input,
-        textarea {
+        textarea,
+        select {
             width: 100%;
             padding: 8px;
             margin-bottom: 16px;
@@ -69,6 +71,7 @@
             border: none;
             border-radius: 4px;
             cursor: pointer;
+            margin-top: 16px;
         }
 
         .footer {
@@ -93,36 +96,45 @@
 <body>
     <header>
         <h1>Empresa R.G.J</h1>
-            <img src="/Imagens/Imagem_Logotipo.png" alt="Imagem_Logotipo">
+        <img src="/Imagens/Imagem_Logotipo.png" alt="Imagem_Logotipo">
     </header>
 
     <section>
-        <h2>Realizar Pedido</h2>
-<form method="post">
-    <label for="tipoServico">Tipo de Serviço:</label>
-    <input type="text" id="tipoServico" name="tipoServico" required>
+        <h2>Publicar Serviço</h2>
+        <form method="post">
+            <!-- Tipo de Serviço -->
+            <label for="tipoServico">Tipo de Serviço que pretende disponibilizar:</label>
+            <input type="text" id="tipoServico" name="tipoServico" required>
 
-    <label for="detalhes">Detalhes do Serviço:</label>
-    <textarea id="detalhes" name="detalhes" required></textarea>
+            <!-- Descrição do Serviço -->
+            <label for="descricaoServico">Descrição do Serviço:</label>
+            <textarea id="descricaoServico" name="descricaoServico" rows="4" required></textarea>
 
-    <label for="arquitetoDesigner">Arquiteto/Designer:</label>
-    <input type="text" id="arquitetoDesigner" name="arquitetoDesigner" required>
+            <!-- Preço do Serviço -->
+            <label for="precoServico">Preço do Serviço:</label>
+            <input type="number" id="precoServico" name="precoServico" required min="0">
 
-    <label for="data">Data do Serviço:</label>
-    <input type="date" id="data" name="data" required>
+            <label for="negociavel">Preço Negociável:</label>
+            <select id="negociavel" name="negociavel">
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
 
-    <button type="submit">Enviar Pedido</button>
-</form>
+            <button type="submit">Enviar Serviço</button>
+        </form>
     </section>
 
     <div class="footer">
-        <a href="VerPedido">
-            <span>Ver Pedidos</span>
+        <a href="VerPortefolio">
+            <span>Ver seus Serviços</span>
         </a>
         <a href="index.html">
-                <img src="/Imagens/imagemlogin.png" alt="Ícone de Login/Registar">
+            <img src="/Imagens/imagemlogin.png" alt="Ícone de Login/Registar">
             <span>Login/Registar</span>
         </a>
     </div>
 </body>
+
 </html>
+</html>
+

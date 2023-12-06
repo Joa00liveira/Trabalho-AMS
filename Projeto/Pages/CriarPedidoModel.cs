@@ -16,10 +16,10 @@ namespace Projeto.Pages
         public void OnPost()
         {
             // Acesso aos dados do formulário usando o objeto Request.Form
-            var tipoServico = Request.Form["TipoServico"];
-            var detalhes = Request.Form["Detalhes"];
-            var arquitetoDesigner = Request.Form["ArquitetoDesigner"];
-            var data = Request.Form["Data"];
+            var tipoServico = Request.Form["tipoServico"];
+            var detalhes = Request.Form["detalhes"];
+            var arquitetoDesigner = Request.Form["arquitetoDesigner"];
+            var data = Request.Form["data"];
 
             // Verifica se os campos são nulos ou vazios
             if (string.IsNullOrWhiteSpace(tipoServico) ||
@@ -37,7 +37,6 @@ namespace Projeto.Pages
             {
                 TipoServico = tipoServico,
                 Detalhes = detalhes,
-                ArquitetoDesigner = arquitetoDesigner,
                 Data = DateTime.Parse(data)
             });
 

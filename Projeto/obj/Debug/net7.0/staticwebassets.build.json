@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qdgkoDPtKtdo2g5Zv3ZKijr3our92GsfXDOA9ep0E4o=",
+  "Hash": "G5rUax6SK5aT6MbMMbp2apbgENeuZu4WQNAM811MxDc=",
   "Source": "Projeto",
   "BasePath": "_content/Projeto",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Projeto\\wwwroot",
       "Source": "Projeto",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\Imagens\\Imagem_Logotipo.png",
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\Imagens\\Imagem_Logotipo.png",
       "SourceId": "Projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "RelativePath": "Imagens/Imagem_Logotipo.png",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\Imagens\\Imagem_Logotipo.png"
     },
     {
-      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\Imagens\\imagemlogin.png",
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\Imagens\\imagemlogin.png",
       "SourceId": "Projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "RelativePath": "Imagens/imagemlogin.png",
       "AssetKind": "All",
