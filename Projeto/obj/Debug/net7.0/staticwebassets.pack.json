@@ -1,12 +1,32 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\Imagens\\Imagem_Logotipo.png",
-      "PackagePath": "staticwebassets\\Imagens\\Imagem_Logotipo.png"
+      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\css\\estilos-criarpedido.css",
+      "PackagePath": "staticwebassets\\css\\estilos-criarpedido.css"
     },
     {
-      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\Imagens\\imagemlogin.png",
-      "PackagePath": "staticwebassets\\Imagens\\imagemlogin.png"
+      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\css\\estilos-index.css",
+      "PackagePath": "staticwebassets\\css\\estilos-index.css"
+    },
+    {
+      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\css\\estilos-pubserv.css",
+      "PackagePath": "staticwebassets\\css\\estilos-pubserv.css"
+    },
+    {
+      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\css\\estilos-verpedido.css",
+      "PackagePath": "staticwebassets\\css\\estilos-verpedido.css"
+    },
+    {
+      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\css\\estilos-verportefolio.css",
+      "PackagePath": "staticwebassets\\css\\estilos-verportefolio.css"
+    },
+    {
+      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\images\\login.png",
+      "PackagePath": "staticwebassets\\images\\login.png"
+    },
+    {
+      "Id": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Hmtl\\Repo_M06\\Projeto\\wwwroot\\images\\logotipo.png",
+      "PackagePath": "staticwebassets\\images\\logotipo.png"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Projeto.Microsoft.AspNetCore.StaticWebAssets.props",

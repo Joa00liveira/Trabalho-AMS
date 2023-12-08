@@ -1,6 +1,7 @@
+// PublicarServicoModel.cs
+
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System;
-using System.Collections.Generic;
 
 namespace Projeto.Pages
 {
@@ -21,7 +22,7 @@ namespace Projeto.Pages
             var precoServico = Request.Form["precoServico"];
             var negociavel = Request.Form["negociavel"];
 
-            // Verifica se os campos são nulos ou vazios
+            // Verificar se os campos são nulos ou vazios
             if (string.IsNullOrWhiteSpace(tipoServico) ||
                 string.IsNullOrWhiteSpace(descricaoServico) ||
                 string.IsNullOrWhiteSpace(precoServico) ||
@@ -31,9 +32,23 @@ namespace Projeto.Pages
                 return;
             }
 
-            // Simulando o armazenamento em um banco de dados
+            // Verificar se a descrição contém palavras-chave
+            if (DescricaoContemPalavrasChave(descricaoServico))
+            {
+                Mensagem = "A descrição deve conter palavras-chave específicas.";
+                return;
+            }
+
+            // Verificar se o preço é diferente de zero
+            if (decimal.TryParse(precoServico, out decimal preco) && preco == 0)
+            {
+                Mensagem = "O preço do serviço não pode ser zero.";
+                return;
+            }
+
+            // Restante do código para publicar o serviço
             var servicoService = new ServicoService();
-            servicoService.PublicarServico(new Servico
+            var sucesso = servicoService.PublicarServico(new Servico
             {
                 TipoServico = tipoServico,
                 DescricaoServico = descricaoServico,
@@ -41,28 +56,27 @@ namespace Projeto.Pages
                 Negociavel = string.Equals(negociavel, "sim", StringComparison.OrdinalIgnoreCase)
             });
 
-            Mensagem = "Serviço publicado com sucesso!";
-        }
-
-        // Simulação de uma classe de serviço que interage com um banco de dados
-        public class ServicoService
-        {
-            private static readonly List<Servico> _bancoDeDados = new List<Servico>();
-
-            public void PublicarServico(Servico servico)
+            if (sucesso)
             {
-                // Simula a adição do serviço ao banco de dados
-                _bancoDeDados.Add(servico);
+                Mensagem = "Serviço publicado com sucesso!";
+            }
+            else
+            {
+                Mensagem = "Erro ao publicar o serviço. Por favor, tente novamente.";
             }
         }
 
-        // Simulação da entidade Servico
-        public class Servico
+        private bool DescricaoContemPalavrasChave(string descricao)
         {
-            public string TipoServico { get; set; }
-            public string DescricaoServico { get; set; }
-            public decimal PrecoServico { get; set; }
-            public bool Negociavel { get; set; }
+            string[] palavrasChave = { "tempo", "material", "metros quadrados" };
+            foreach (var palavra in palavrasChave)
+            {
+                if (!descricao.Contains(palavra, StringComparison.OrdinalIgnoreCase))
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

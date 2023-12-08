@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    display: flex;
+}
+
+.sidebar {
+    width: 0;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    overflow: hidden;
+    transition: width 0.5s;
+}
+
+.sidebar .toggle-btn,
+.sidebar .close-btn {
+    background-color: black;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+
+.sidebar .toggle-btn {
+    display: block;
+}
+
+.sidebar .close-btn {
+    display: none;
+    background-color: transparent; /* Cor transparente */
+    color: white; /* Cor do texto */
+    border: none; /* Remover a borda */
+}
+
+.sidebar .close-btn:hover {
+    background-color: #ddd; /* Cor clara ao passar o mouse */
+}
+
+.sidebar .content {
+    margin-top: 50px; /* Adicionei margem superior para ajustar a posição do conteúdo */
+    padding: 20px;
+}
+
+.sidebar .search-container {
+    padding: 10px;
+    background-color: #444;
+}
+
+.sidebar .search-container label,
+.sidebar .search-container input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.sidebar .theme-list {
+    padding: 10px;
+}
+
+.theme-list h3 {
+    margin-bottom: 10px;
+}
+
+.theme-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.theme-list li {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.theme-list li:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    transition: margin-left 0.5s;
+    margin-left: 0; /* Definindo a margem inicial */
+    width: 100%; /* Garantindo que o conteúdo ocupa a largura total inicialmente */
+    box-sizing: border-box; /* Considerando padding e borda dentro da largura total */
+}
+
+.main-content.closed {
+    margin-left: 250px; /* Ajustando a margem quando a barra lateral está aberta */
+    width: calc(100% - 250px); /* Ajustando a largura quando a barra lateral está aberta */
+}
+
+.info-section {
+    margin-top: 20px;
+}
+
+.info-section h2 {
+    color: #333;
+}
+
+.work-section {
+    margin-top: 40px;
+}
+
+.work-section h2 {
+    color: #333;
+}
+
+.work-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}

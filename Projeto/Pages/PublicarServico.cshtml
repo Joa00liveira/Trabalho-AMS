@@ -7,96 +7,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publicar Serviço</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
+    <link rel="stylesheet" href="/css/estilos-pubserv.css" /> <!-- Adicione essa linha para carregar o CSS -->
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-        }
-
-        header h1 {
-            margin: 20px;
-        }
-
-        header img {
-            margin-right: 8px;
-            max-height: 60px;
-            max-width: 10000%;
-        }
-
-        section {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        form {
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input,
-        textarea,
-        select {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        button {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            margin-top: 16px;
-        }
-
-        .footer {
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            margin-top: 10px;
-        }
-
-        .footer a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        .footer img {
-            margin-right: 8px;
-            max-height: 30px;
-        }
-    </style>
 </head>
 
 <body>
     <header>
         <h1>Empresa R.G.J</h1>
-        <img src="/Imagens/Imagem_Logotipo.png" alt="Imagem_Logotipo">
+        <img src="/images/logotipo.png" alt="Imagem_Logotipo">
     </header>
 
     <section>
@@ -104,7 +22,12 @@
         <form method="post">
             <!-- Tipo de Serviço -->
             <label for="tipoServico">Tipo de Serviço que pretende disponibilizar:</label>
-            <input type="text" id="tipoServico" name="tipoServico" required>
+            <select id="tipoServico" name="tipoServico">
+                <option value="Tipo1">Tipo1</option>
+                <option value="Tipo2">Tipo2</option>
+                <option value="Tipo3">Tipo3</option>
+                <option value="Tipo4">Tipo4</option>
+            </select>
 
             <!-- Descrição do Serviço -->
             <label for="descricaoServico">Descrição do Serviço:</label>
@@ -129,7 +52,7 @@
             <span>Ver seus Serviços</span>
         </a>
         <a href="index.html">
-            <img src="/Imagens/imagemlogin.png" alt="Ícone de Login/Registar">
+            <img src="/images/login.png" alt="Ícone de Login/Registar">
             <span>Login/Registar</span>
         </a>
     </div>

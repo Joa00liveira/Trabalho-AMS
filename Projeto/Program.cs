@@ -18,6 +18,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseRouting();
 
+app.UseStaticFiles();
 app.UseEndpoints(endpoints =>
 {
 endpoints.MapRazorPages();
