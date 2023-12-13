@@ -1,0 +1,38 @@
+@page
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Empresa R.G.J</title>
+    <link rel="stylesheet" href="/css/estilos-criarpedido.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Empresa R.G.J</h1>
+        <img src="/images/logotipo.png" alt="logotipo">
+    </header>
+
+    <section>
+        <h2>Login</h2>
+        <form method="post" action="/login"> <!-- Certifique-se de configurar a rota correta no atributo 'action' -->
+            <label for="username">Nome de Utilizador:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Entrar</button>
+        </form>
+    </section>
+
+    <div class="footer">
+        <a href="Registo">
+            <span>Registar</span>
+        </a>
+    </div>
+</body>
+
+</html>

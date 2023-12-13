@@ -15,10 +15,16 @@ namespace Projeto
             Configuration = configuration;
         }
 
-        public void ConfigureServices(IServiceCollection services)
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddControllersWithViews();
+        services.AddLogging(builder =>
         {
-            services.AddControllersWithViews();
-        }
+            builder.AddConsole(); // Adiciona logging para o console
+            // Outras configurações de logging podem ser adicionadas aqui
+        });
+    }
+
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {

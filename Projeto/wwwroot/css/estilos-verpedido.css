@@ -32,31 +32,56 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Adicione esta linha para centralizar os itens na vertical */
+    text-align: left; /* Mantenha o texto alinhado à esquerda */
 }
 
 .pedido {
+    width: 100%; /* Garante que a largura seja 100% dentro da seção */
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
+    flex-direction: column; /* Alterado para empilhar os itens verticalmente */
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.pedido div {
+    width: 100%; /* Garante que a largura seja 100% dentro do pedido */
+}
+
+.pedido h3 {
+    color: #333;
+}
+
+.pedido p {
+    margin-bottom: 8px;
 }
 
 .status {
+    padding: 10px;
+    border-radius: 4px;
     font-weight: bold;
+    margin-top: 10px; /* Adicionado espaço superior para separar o status do valor */
+}
+
+.pendente {
+    background-color: #ffcc00; 
+}
+
+.aceite {
+    background-color: #00cc66; 
 }
 
 .footer {
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
     justify-content: space-evenly;
-    margin-top: 20px;
+    align-items: center;
+    margin-top: 10px;
 }
 
 .footer a {
-    display: flex;
-    align-items: center;
     text-decoration: none;
     color: #333;
 }
