@@ -34,21 +34,21 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: center; /* Adicione esta linha para centralizar os itens na vertical */
-    text-align: left; /* Mantenha o texto alinhado à esquerda */
+    align-items: center;
+    text-align: left;
 }
 
 .pedido {
-    width: 100%; /* Garante que a largura seja 100% dentro da seção */
+    width: 100%;
     display: flex;
-    flex-direction: column; /* Alterado para empilhar os itens verticalmente */
+    justify-content: space-between;
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;
     margin-bottom: 15px;
 }
 
 .pedido div {
-    width: 100%; /* Garante que a largura seja 100% dentro do pedido */
+    width: 100%;
 }
 
 .pedido h3 {
@@ -63,15 +63,34 @@ section {
     padding: 10px;
     border-radius: 4px;
     font-weight: bold;
-    margin-top: 10px; /* Adicionado espaço superior para separar o status do valor */
+    margin-top: 10px;
 }
 
 .pendente {
-    background-color: #ffcc00; 
+    color: #ffcc00; 
 }
 
 .aceite {
-    background-color: #00cc66; 
+    color: #00cc66; 
+}
+
+.pagamento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pagamento button {
+    background-color: #333;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagamento button:hover {
+    background-color: #555;
 }
 
 .footer {

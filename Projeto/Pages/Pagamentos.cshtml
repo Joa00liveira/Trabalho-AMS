@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pedidos</title>
+    <title>Pagamentos</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,7 +47,7 @@
             text-align: left;
         }
 
-        .pedido {
+        .pagamento-info {
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -56,50 +56,16 @@
             margin-bottom: 15px;
         }
 
-        .pedido div {
+        .pagamento-info div {
             width: 100%;
         }
 
-        .pedido h3 {
+        .pagamento-info h3 {
             color: #333;
         }
 
-        .pedido p {
+        .pagamento-info p {
             margin-bottom: 8px;
-        }
-
-        .status {
-            padding: 10px;
-            border-radius: 4px;
-            font-weight: bold;
-            margin-top: 10px;
-        }
-
-        .pendente {
-            color: #ffcc00; 
-        }
-
-        .aceite {
-            color: #00cc66; 
-        }
-
-        .pagamento {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .pagamento button {
-            background-color: #333;
-            color: white;
-            padding: 8px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        .pagamento button:hover {
-            background-color: #555;
         }
 
         .footer {
@@ -118,44 +84,91 @@
             margin-right: 8px;
             max-height: 30px;
         }
+
+        .pagamento select {
+            padding: 8px;
+            border-radius: 4px;
+        }
+
+        .pagamento button {
+            background-color: #333;
+            color: white;
+            padding: 8px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .pagamento button:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Pedidos</h1>
+        <h1>Pagamentos</h1>
         <img src="/images/logotipo.png" alt="Imagem_Logotipo">
     </header>
 
     <section>
-        <div class="pedido">
+        <div class="pagamento-info">
             <div>
                 <h3>Tipo de Serviço: Arquiteto</h3>
                 <p>Detalhes: Projeto de remodelação para a sala de estar.</p>
                 <p>Arquiteto: João Silva</p>
                 <p>Data do Serviço: 2023-12-01</p>
             </div>
-            <div class="status pendente">Pendente</div>
+            <div class="pagamento">
+                <span>Valor: 500 €</span>
+                <label for="metodoPagamentoArquiteto">Escolha o método de pagamento:</label>
+                <select id="metodoPagamentoArquiteto">
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="transferencia">Transferência Bancária</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <button onclick="realizarPagamento('arquiteto', 'metodoPagamentoArquiteto')">Efetuar Pagamento</button>
             </div>
         </div>
 
-        <div class="pedido">
+        <div class="pagamento-info">
             <div>
                 <h3>Tipo de Serviço: Design </h3>
                 <p>Detalhes: Decoração para a sala de estar.</p>
                 <p>Designer: Maria Oliveira</p>
                 <p>Data do Serviço: 2023-12-20</p>
             </div>
-            <div class="status aceite">Aceite/Alugado</div>
+            <div class="pagamento">
+                <span>Valor: 300 €0</span>
+                <label for="metodoPagamentoDesigner">Escolha o método de pagamento:</label>
+                <select id="metodoPagamentoDesigner">
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="transferencia">Transferência Bancária</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <button onclick="realizarPagamento('designer', 'metodoPagamentoDesigner')">Efetuar Pagamento</button>
             </div>
         </div>
     </section>
 
     <div class="footer">
-        <a href="Pagamentos">
-            <span>Efetua Pagamentos</span>
+        <a href="index.html">
+            <span>Voltar para o Início</span>
         </a>
     </div>
+
+    <script>
+        function realizarPagamento(servico, selectId) {
+            const metodoPagamentoSelect = document.getElementById(selectId);
+            const metodoPagamentoEscolhido = metodoPagamentoSelect.value;
+            
+            if (metodoPagamentoEscolhido) {
+                alert(`Pagamento realizado para ${servico} com o método: ${metodoPagamentoEscolhido}`);
+            } else {
+                alert('Operação de pagamento cancelada.');
+            }
+        }
+    </script>
 </body>
 
 </html>
