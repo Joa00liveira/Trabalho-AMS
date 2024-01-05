@@ -1,0 +1,56 @@
+@page
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registar - Empresa R.G.J</title>
+    <link rel="stylesheet" href="/css/estilos-criarpedido.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Empresa R.G.J</h1>
+        <img src="/images/logotipo.png" alt="logotipo">
+    </header>
+
+    <section>
+        <h2>Registar</h2>
+        <form method="post" action="/registrar"> 
+            <label for="username">Nome de Utilizador:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>            
+
+            <label for="birthdate">Data de Nascimento:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="phoneNumber">Número de Telemóvel:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+            <label for="formation">Formação:</label>
+            <input type="text" id="formation" name="formation" required>
+
+            <label for="experience">Anos de Experiência:</label>
+            <input type="number" id="experience" name="experience" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirmPassword">Confirmar Senha:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <button type="submit">Registar</button>
+        </form>
+    </section>
+
+    <div class="footer">
+        <a href="login">
+            <span>Login</span>
+        </a>
+    </div>
+</body>
+
+</html>

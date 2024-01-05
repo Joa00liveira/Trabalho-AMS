@@ -9,41 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Projeto
 build_property.RootNamespace = Projeto
-build_property.ProjectDir = C:\Users\RuiMiguelSoaresRodri\Desktop\Lesi\2ano\AMS\Trabalho_Html\repo_M06\Projeto\
+build_property.ProjectDir = C:\Users\RuiMiguelSoaresRodri\Desktop\Lesi\2ano\AMS\repo_M06\Projeto\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = C:\Users\RuiMiguelSoaresRodri\Desktop\Lesi\2ano\AMS\Trabalho_Html\repo_M06\Projeto
+build_property.MSBuildProjectDirectory = C:\Users\RuiMiguelSoaresRodri\Desktop\Lesi\2ano\AMS\repo_M06\Projeto
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/Trabalho_Html/repo_M06/Projeto/Pages/CriarPedido.cshtml]
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/CriarPedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ3JpYXJQZWRpZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/Trabalho_Html/repo_M06/Projeto/Pages/index.cshtml]
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcaW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/Trabalho_Html/repo_M06/Projeto/Pages/login.cshtml]
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/Trabalho_Html/repo_M06/Projeto/Pages/Pagamentos.cshtml]
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/loginTrabalhador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcbG9naW5UcmFiYWxoYWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/Pagamentos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGFnYW1lbnRvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/Trabalho_Html/repo_M06/Projeto/Pages/PublicarServico.cshtml]
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/PublicarServico.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHVibGljYXJTZXJ2aWNvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/Trabalho_Html/repo_M06/Projeto/Pages/Registo.cshtml]
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/Registo.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/Trabalho_Html/repo_M06/Projeto/Pages/VerPedido.cshtml]
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/RegistoTrabalhador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0b1RyYWJhbGhhZG9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/VerPedido.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyUGVkaWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/Trabalho_Html/repo_M06/Projeto/Pages/VerPortefolio.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyUG9ydGVmb2xpby5jc2h0bWw=
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/VerPortefoliotTrabalhador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmVyUG9ydGVmb2xpb3RUcmFiYWxoYWRvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/RuiMiguelSoaresRodri/Desktop/Lesi/2ano/AMS/repo_M06/Projeto/Pages/VisualizarPortefólio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVmlzdWFsaXphclBvcnRlZsOzbGlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

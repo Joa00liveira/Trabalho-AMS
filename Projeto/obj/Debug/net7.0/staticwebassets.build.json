@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VnO30zrg4KGyBo3pqtCQVK7InjoK9gbVaf3oJYL32Gk=",
+  "Hash": "DyKZWcBVVSoYcgv73cuGoMGjUouWmMyHPxxRntJmO1g=",
   "Source": "Projeto",
   "BasePath": "_content/Projeto",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Projeto\\wwwroot",
       "Source": "Projeto",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\css\\estilos-criarpedido.css",
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\css\\estilos-criarpedido.css",
       "SourceId": "Projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "RelativePath": "css/estilos-criarpedido.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\estilos-criarpedido.css"
     },
     {
-      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\css\\estilos-index.css",
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\css\\estilos-index.css",
       "SourceId": "Projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "RelativePath": "css/estilos-index.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\estilos-index.css"
     },
     {
-      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\css\\estilos-pubserv.css",
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\css\\estilos-pubserv.css",
       "SourceId": "Projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "RelativePath": "css/estilos-pubserv.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\estilos-pubserv.css"
     },
     {
-      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\css\\estilos-verpedido.css",
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\css\\estilos-verpedido.css",
       "SourceId": "Projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "RelativePath": "css/estilos-verpedido.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\estilos-verpedido.css"
     },
     {
-      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\css\\estilos-verportefolio.css",
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\css\\estilos-verportefolio.css",
       "SourceId": "Projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "RelativePath": "css/estilos-verportefolio.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\estilos-verportefolio.css"
     },
     {
-      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\images\\login.png",
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\images\\login.png",
       "SourceId": "Projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "RelativePath": "images/login.png",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\login.png"
     },
     {
-      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\images\\logotipo.png",
+      "Identity": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\images\\logotipo.png",
       "SourceId": "Projeto",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\wwwroot\\",
       "BasePath": "_content/Projeto",
       "RelativePath": "images/logotipo.png",
       "AssetKind": "All",

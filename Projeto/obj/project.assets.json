@@ -1164,11 +1164,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\Projeto.csproj",
+      "projectUniqueName": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\Projeto.csproj",
       "projectName": "Projeto",
-      "projectPath": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\Projeto.csproj",
+      "projectPath": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\Projeto.csproj",
       "packagesPath": "C:\\Users\\RuiMiguelSoaresRodri\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\Trabalho_Html\\repo_M06\\Projeto\\obj\\",
+      "outputPath": "C:\\Users\\RuiMiguelSoaresRodri\\Desktop\\Lesi\\2ano\\AMS\\repo_M06\\Projeto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\RuiMiguelSoaresRodri\\AppData\\Roaming\\NuGet\\NuGet.Config",

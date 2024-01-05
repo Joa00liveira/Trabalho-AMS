@@ -1,0 +1,121 @@
+@page
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; 
+        }
+
+        header h1 {
+            margin: 0; 
+            color: #fff;
+        }
+
+        header img {
+            margin-right: 8px;
+            max-height: 60px;
+            max-width: 10000%;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+
+        div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #portfolio-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px;
+        }
+
+        .portfolio-item {
+            width: 45%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .portfolio-item h2 {
+            color: #333;
+        }
+
+        .portfolio-item p {
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Portfólios</h1>
+        <img src="/images/logotipo.png" alt="Imagem_Logotipo">
+    </header>
+
+    <div>
+        <label for="filter">Filtrar por Tema:</label>
+        <select id="filter">
+            <option value="all">Todos</option>
+            <option value="Tema 1">Tema 1</option>
+            <option value="Tema 2">Tema 2</option>
+            <option value="Tema 3">Tema 3</option>
+        </select>
+
+        <label for="sort">Ordenar por:</label>
+        <select id="sort">
+            <option value="default">Preço Crescente</option>
+            <option value="name">Preço Decrescente</option>
+        </select>
+    </div>
+
+    <div id="portfolio-list">
+        <div class="portfolio-item">
+            <h2>Portfólio 1</h2>
+            <p>Descrição do Portfólio 1...</p>
+        </div>
+        <div class="portfolio-item">
+            <h2>Portfólio 2</h2>
+            <p>Descrição do Portfólio 2...</p>
+        </div>
+    </div>
+</body>
+
+</html>
