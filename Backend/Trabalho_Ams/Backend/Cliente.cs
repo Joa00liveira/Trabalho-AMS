@@ -10,7 +10,6 @@ namespace Backend
         private int idade;
         private string password;
         private List<Servico> pedidosDeServico;
-        private Trabalhadores trabalhadores;
 
 
         public Cliente(int id, string nome, int idade, string password)
@@ -20,7 +19,6 @@ namespace Backend
             this.idade = idade;
             this.password = password;
             this.pedidosDeServico = new List<Servico>();
-            this.trabalhadores = new Trabalhadores();
         }
 
         public int Id
@@ -69,41 +67,27 @@ namespace Backend
             return false;
         }
 
-
-        public void FazerPedidoServico(string tipoServico, string detalhesServico, Trabalhador trabalhador, DateTime dataServico)
+        public void EfetuarPedido(string tiposervico, string detalhes, string emailtrabalhador, DateTime dataServico)
         {
-            // Verifica se a descrição do serviço não contém palavras-chave específicas
-            if (!DescricaoContemPalavrasChave(detalhesServico))
+            if (!Servico.tiposDeServicoValidos.Contains(tiposervico, StringComparer.OrdinalIgnoreCase))
             {
-                Console.WriteLine("A descrição do serviço precisa conter informações relevantes. Melhore a descrição.");
-                return;
-            }
-            // Verifica se o tipo de serviço NÃO existe
-            if (ExisteTipoServico(tipoServico))
-            {
-                Console.WriteLine("Este tipo de serviço não está disponível. Escolha outro tipo de serviço.");
-                return;
-            }
-            // Verifica se o trabalhador existe na lista de trabalhadores disponíveis
-            if (trabalhadores.TrabalhadorExiste(trabalhador))
-            {
-                Console.WriteLine("O trabalhador especificado não está disponível. Escolha outro trabalhador.");
+                Console.WriteLine("Tipo de serviço inválido.");
                 return;
             }
 
-            // Verifica se a especialização do trabalhador é compatível com o tipo de serviço
-            if (!trabalhador.Especializacao.Equals(tipoServico, StringComparison.OrdinalIgnoreCase))
+            if (!DescricaoContemPalavrasChave(detalhes))
             {
-                Console.WriteLine("O trabalhador não possui a especialização necessária para este tipo de serviço. Escolha outro trabalhador.");
+                Console.WriteLine("Detalhes contêm palavras-chave que não estão.");
                 return;
             }
-            // Verifica se a data do serviço é maior que a data atual
-            if (dataServico <= DateTime.Now)
+
+            if (dataServico <= DateTime.Today)
             {
-                Console.WriteLine("A data do serviço deve ser posterior à data atual. Escolha uma data válida.");
+                Console.WriteLine("Data do serviço invalida");
                 return;
             }
-            pedidosDeServico.Add(new Servico(tipoServico, detalhesServico,  dataServico));
+
+            Console.WriteLine("Pedido de serviço válido. Enviar para processamento...");
 
         }
 

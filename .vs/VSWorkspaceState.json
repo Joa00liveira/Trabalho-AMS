@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Backend",
+    "\\Backend\\Trabalho_Ams",
+    "\\Backend\\Trabalho_Ams\\Backend"
   ],
-  "SelectedNode": "\\C:\\Users\\Rui\\Source\\Repos\\repo_M06",
+  "SelectedNode": "\\Backend\\Trabalho_Ams\\Backend\\Cliente.cs",
   "PreviewInSolutionExplorer": false
 }

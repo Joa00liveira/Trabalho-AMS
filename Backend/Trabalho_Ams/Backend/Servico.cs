@@ -4,9 +4,13 @@
     private string detalhesServico;
     private DateTime dataServico;
     private int estado;
-    private static List<string> tiposDeServicoValidos = new List<string> { "Construção", "Design de Interiores", "Pintura", "Reparação" };
+    private int preco;
+    private bool precoNegociavel;
+    public static List<string> tiposDeServicoValidos = new List<string> { "Construção", "Design de Interiores", "Pintura", "Reparação" };
 
-    public enum Estado
+
+
+    public enum EEstado
     {
         Enviado = 0,
         Desativado = -1,
@@ -22,6 +26,8 @@
         detalhesServico = string.Empty;
         dataServico = DateTime.MinValue;
         estado = -1;
+        preco = 0;
+        precoNegociavel = false;
     }
 
 
@@ -41,6 +47,10 @@
         get { return dataServico; }
     }
 
+    public int Estado { get => estado; set => estado = value; }
+    public int Preco { get => preco; set => preco = value; }
+    public bool PrecoNegociavel { get => precoNegociavel; set => precoNegociavel = value; }
+
     public void ValidarTipoServico(string tipoServico)
     {
         // Verifica se o tipo de serviço é válido
@@ -49,11 +59,13 @@
             throw new ArgumentException("Tipo de serviço inválido.", nameof(tipoServico));
         }
     }
-    public Servico(string tipoServico, string detalhesServico, DateTime dataServico)
+    public Servico(string tipoServico, string detalhesServico, DateTime dataServico, int estado, int preco, bool precoNegociavel)
     {
         this.tipoServico = tipoServico;
         this.detalhesServico = detalhesServico;
         this.dataServico = dataServico;
+        this.estado = estado;
+        this.preco = preco;
+        this.precoNegociavel = precoNegociavel;
     }
-
 }

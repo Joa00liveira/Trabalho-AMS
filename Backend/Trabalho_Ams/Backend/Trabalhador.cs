@@ -1,4 +1,6 @@
-﻿public class Trabalhador
+﻿using Backend;
+
+public class Trabalhador
 {
 
     private int id;
@@ -16,7 +18,7 @@
     }
 
     // Construtor com parâmetros
-    public Trabalhador(int id,string nome, string email, string especializacao)
+    public Trabalhador(int id, string nome, string email, string especializacao)
     {
         this.id = id;
         this.nome = nome;
@@ -42,5 +44,12 @@
     public string Email
     {
         get { return email; }
+    }
+
+    public int PublicarServico(string tipoServico, string detalhesServico, DateTime dataServico, int estado, int preco, bool precoNegociavel)
+    {
+        Servico s = new Servico(tipoServico, detalhesServico, dataServico, estado, preco, precoNegociavel);
+        //ADICIONAR SERVIÇO À LISTA DE SERVIÇOS (CLASSE SERVIÇOS POR CRIAR)
+        return 0;
     }
 }

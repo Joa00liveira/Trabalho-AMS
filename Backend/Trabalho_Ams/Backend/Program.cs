@@ -6,30 +6,49 @@ namespace Backend
     {
         static void Main(string[] args)
         {
-            // Criar um Utilizador
-            Cliente u1 = new Cliente(1, "NomeUtilizador", 25, "senha");
+            // Criar Clientes
+            Clientes gerenciadorClientes = new Clientes();
+            Cliente cliente1 = new Cliente(1, "John Doe", 30, "password123");
+            Cliente cliente2 = new Cliente(2, "Jane Doe", 25, "password456");
 
-            // Adicionar alguns trabalhadores
-            Trabalhadores trabalhadores = new Trabalhadores();
-            Trabalhador trab1 = new Trabalhador(1,"Trab1", "trab1@example.com", "Construção");
-            Trabalhador trab2 = new Trabalhador(2,"Trab2", "trab2@example.com", "Design de Interiores");
-            Trabalhador trab3 = new Trabalhador(3,"Trab3", "trab3@example.com", "woows");
+            gerenciadorClientes.AdicionarCliente(cliente1);
+            gerenciadorClientes.AdicionarCliente(cliente2);
 
-            trabalhadores.AdicionarTrabalhador(trab1);
-            trabalhadores.AdicionarTrabalhador(trab2);
+            // Criar Serviços
+            Servicos gerenciadorServicos = new Servicos();
+            Servico servico1 = new Servico("Construção", "Detalhes serviço 1", DateTime.Now.AddDays(7), 1, 100, true);
+            Servico servico2 = new Servico("Pintura", "Detalhes serviço 2", DateTime.Now.AddDays(14), 1, 150, false);
 
-            // Solicitar um serviço
-            DateTime dataServico = DateTime.Now.AddDays(7);  // Exemplo: serviço daqui a 7 dias
-            u1.FazerPedidoServico("Construção", "orçamento", trab1, dataServico);
+            gerenciadorServicos.AdicionarServico(servico1);
+            gerenciadorServicos.AdicionarServico(servico2);
 
-            // Listar trabalhadores
-            Console.WriteLine("Trabalhadores disponíveis:");
-            foreach (var trabalhador in trabalhadores.ListarTrabalhadores())
+            // Criar Trabalhadores
+            Trabalhadores gerenciadorTrabalhadores = new Trabalhadores();
+            Trabalhador trabalhador1 = new Trabalhador(1, "Trabalhador 1", "trabalhador1@example.com", "Construção");
+            Trabalhador trabalhador2 = new Trabalhador(2, "Trabalhador 2", "trabalhador2@example.com", "Pintura");
+
+            gerenciadorTrabalhadores.AdicionarTrabalhador(trabalhador1);
+            gerenciadorTrabalhadores.AdicionarTrabalhador(trabalhador2);
+
+            // Exemplo de uso: Listar todos os clientes
+            Console.WriteLine("Todos os Clientes:");
+            var todosClientes = gerenciadorClientes.ObterTodosClientes();
+            foreach (var cliente in todosClientes)
             {
-                Console.WriteLine($"ID: {trabalhador.Id}, Nome: {trabalhador.Nome}, Email: {trabalhador.Email}, Especialização: {trabalhador.Especializacao}");
+                Console.WriteLine($"ID do Cliente: {cliente.Id}, Nome: {cliente.Nome}, Idade: {cliente.Idade}");
             }
 
+            // Exemplo de uso: Listar todos os serviços
+            Console.WriteLine("\nTodos os Serviços:");
+            var todosServicos = gerenciadorServicos.ObterTodosServicos();
+            foreach (var servico in todosServicos)
+            {
+                Console.WriteLine($" Tipo: {servico.TipoServico}, Detalhes: {servico.DetalhesServico}, Data: {servico.DataServico}");
+            }
+
+            // Exemplo de uso: Listar todos os trabalhadores
+            Console.WriteLine("\nTodos os Trabalhadores:");
+            gerenciadorTrabalhadores.ListarTrabalhadores();
         }
     }
 }
-

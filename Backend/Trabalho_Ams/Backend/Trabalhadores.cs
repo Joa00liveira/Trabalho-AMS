@@ -13,9 +13,17 @@ namespace Backend
             listaTrabalhadores = new List<Trabalhador>();
         }
 
-        public void AdicionarTrabalhador(Trabalhador trabalhador)
+        public int AdicionarTrabalhador(Trabalhador trabalhador)
         {
-            listaTrabalhadores.Add(trabalhador);
+            foreach (string s in Servico.tiposDeServicoValidos)
+            {
+                if (trabalhador.Especializacao == s)
+                {
+                    listaTrabalhadores.Add(trabalhador);
+                    return 0;
+                }
+            }
+            return -1;
         }
 
         public void RemoverTrabalhador(Trabalhador trabalhador)
@@ -35,9 +43,12 @@ namespace Backend
             return false;
         }
 
-        public IEnumerable<Trabalhador> ListarTrabalhadores()
+        public void ListarTrabalhadores()
         {
-            return listaTrabalhadores;
+            foreach (Trabalhador t in listaTrabalhadores)
+            {
+                Console.WriteLine($"ID: {t.Id} Nome: {t.Nome} | Esp.: {t.Especializacao} Email: {t.Email}");
+            }
         }
     }
 }
