@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Backend
 {
-    public class Utilizador
+    public class Cliente
     {
         private int id;
         private string nome;
@@ -13,7 +13,7 @@ namespace Backend
         private Trabalhadores trabalhadores;
 
 
-        public Utilizador(int id, string nome, int idade, string password)
+        public Cliente(int id, string nome, int idade, string password)
         {
             this.id = id;
             this.nome = nome;

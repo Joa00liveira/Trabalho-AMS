@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Backend
 {
-    public class Trabalhadores
+    public class Trabalhadores : InterfaceTrabalhador
     {
         private List<Trabalhador> listaTrabalhadores;
 

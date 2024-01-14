@@ -7,7 +7,7 @@ namespace Backend
         static void Main(string[] args)
         {
             // Criar um Utilizador
-            Utilizador u1 = new Utilizador(1, "NomeUtilizador", 25, "senha");
+            Cliente u1 = new Cliente(1, "NomeUtilizador", 25, "senha");
 
             // Adicionar alguns trabalhadores
             Trabalhadores trabalhadores = new Trabalhadores();

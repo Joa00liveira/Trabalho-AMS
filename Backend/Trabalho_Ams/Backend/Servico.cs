@@ -3,14 +3,25 @@
     private string tipoServico;
     private string detalhesServico;
     private DateTime dataServico;
+    private int estado;
     private static List<string> tiposDeServicoValidos = new List<string> { "Construção", "Design de Interiores", "Pintura", "Reparação" };
-    
+
+    public enum Estado
+    {
+        Enviado = 0,
+        Desativado = -1,
+        Ativo = 1,
+        Em_Verificacao = 2,
+        Concluido = 3
+    }
+
     // Construtor padrão
     public Servico()
     {
         tipoServico = string.Empty; // Inicializa como vazio por padrão
         detalhesServico = string.Empty;
         dataServico = DateTime.MinValue;
+        estado = -1;
     }
 
 
